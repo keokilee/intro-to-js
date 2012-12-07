@@ -52,14 +52,21 @@
 
     <div class="container">
       <div class="row">
-        <div class="span3">
-          <h1>Placeholder</h1>
+        <div class="span12">
+          <h1>Restaurant Orders</h1>
           <form action="#">
             <fieldset>
-              <input type="text" placeholder="What is your name?" />
+              <input type="text" name="name" placeholder="What are you ordering?" />
+              <input type="text" name="price" placeholder="How much does it cost?" />
               <button type="submit" class="btn">Submit</button>
             </fieldset>
           </form>
+
+          <ul id="orders">
+          </ul>
+
+          <p id="tip">Tip: $0</p>
+          <p id="total">Total: $0</p>
         </div>
       </div>
     </div> <!-- /container -->
@@ -71,6 +78,5 @@
     <script src="../assets/js/bootstrap.js"></script>
     <script src="exercise.js"></script>
     <script src="app.js"></script>
-    <script src="scratch.js"></script>
   </body>
 </html>
